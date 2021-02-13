@@ -456,8 +456,8 @@ class HomebrewCask(object):
 
         cmd = [
             "{brew_path}".format(brew_path=self.brew_path),
-            "cask",
             "list",
+            "--cask",
             self.current_cask
         ]
         rc, out, err = self.module.run_command(cmd)
